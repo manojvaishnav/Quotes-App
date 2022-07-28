@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+    <title>Quotes App</title>
+</head>
+
+<body>
+    {{>navbar}}
+    <section>
+        <div class="container">
+            <div class="book">
+                <div class="page" id="page1">
+                    <div class="data">
+                        <span id="page_1">We are either progressing or retrograding all the while. There is no such
+                            thing as remaining stationary in this life</span>
+                    </div>
+                    <div class="writer">
+                        <span id="author_1">Anais Nin</span>
+                    </div>
+                </div>
+                <div class="page" id="page2">
+                    <div class="data">
+                        <span id="page_2">Happiness does not come from having much, but from being attached to
+                            little.</span>
+                    </div>
+                    <div class="writer">
+                        <span id="author_2">Cheng Yen</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="btn">
+                <button class="shape" id="share">Tweet</button>
+                <button class="shape" id="next">Next</button>
+            </div>
+        </div>
+    </section>
+    {{>footer}}
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

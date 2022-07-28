@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #86cfee; */
+    background-color: rgba(243, 116, 31, 0.727);
+    /* background-image: url(/Images/bg.jpg);
+     */
+    /* background-image: url(https://cdn.pixabay.com/photo/2014/12/27/15/34/notebook-581128_960_720.jpg); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 0px 0px 30px;
+    width: fit-content;
+}
+
+.navbar .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.navbar .logo span a {
+    text-decoration: none;
+    color: #000000;
+    margin-right: 30px;
+}
+
+#logotext1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+#logotext2 {
+    font-size: 16px;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    /* margin-right: 100px; */
+}
+
+.menu ul li a:hover {
+    background-color: transparent;
+    color: #3f76d6;
+    border-radius: 10px;
+}
+
+
+/* Body */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.book {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page {
+    height: 250px;
+    width: 150px;
+    background-color: white;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+}
+
+#page1 {
+    border-radius: 12px 0px 0px 12px;
+    border-right: 2px solid black;
+    z-index: 0;
+}
+
+#page2 {
+    border-radius: 0px 12px 12px 0px;
+    border-left: 2px solid black;
+    z-index: -1;
+}
+
+.btn {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3px;
+}
+
+.shape {
+    width: 45%;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#share {
+    background-color: #33d6e1;
+    margin-left: 5px;
+}
+
+#next {
+    background-color: #e0d319;
+    margin-right: 5px;
+}
+
+
+/* Footer Style */
+footer {
+    margin-top: auto;
+    width: 100vw;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.footerdata {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerdata span {
+    padding: 10px;
+    font-size: 18px;
+    color: #000000;
+}
+
+/* ABOUT US PAGE */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 95%;
+}
+
+.aboutdata {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid white;
+    border-radius: 12px;
+    margin: 10px;
+    width: 100%;
+}
+
+.aboutdata .logo h1 {
+    font-size: 30px;
+    color: white;
+}
+
+.aboutdata .content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.aboutdata .content .aboutimg {
+    height: 300px;
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.aboutdata .content .aboutimg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.aboutdata .abouttext {
+    background-color: white;
+    border-radius: 10px 20px 10px 20px;
+    margin-right: 10%;
+    padding: 10px;
+}
+
+.aboutdata .abouttext .datatext {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutdata .abouttext .datatext span {
+    color: black;
+    margin: 3px;
+    font-size: 20px;
+}
+
+.aboutsocial {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: fit-content;
+}
+
+.aboutsocial a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.aboutsocial a i {
+    font-size: 25px;
+    color: black;
+}
+
+/* CONTACT PAGE */
+form {
+    margin: auto;
+}
+
+.contactpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 10px 15px 10px 15px;
+}
+
+.contactpage h1 {
+    color: black;
+    font-size: 25px;
+}
+
+.contactdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+.contactdiv .nameinput {
+    display: flex;
+    align-items: center;
+}
+
+.contactdiv input,
+.contactdiv textarea {
+    margin: 10px;
+    font-size: 18px;
+    padding: 5px;
+    outline: none;
+}
+
+.contactpage .submitbtn {
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border-radius: 10px;
+    width: 90%;
+    margin: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        box-sizing: border-box;
+    }
+
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        border-radius: 0px 0px 30px 30px;
+    }
+
+    .book {
+        flex-direction: column;
+    }
+
+    .page {
+        width: 250px;
+        min-height: 300px;
+    }
+
+    #page1 {
+        border-radius: 12px;
+    }
+
+    #page2 {
+        display: none;
+    }
+
+    .about .content {
+        flex-direction: column;
+    }
+
+    .about .aboutdata .abouttext {
+        margin: 0%;
+        align-items: center;
+    }
+
+    .aboutdata .content .aboutimg {
+        width: 250px;
+        height: 250px;
+    }
+
+    .contactdiv .nameinput {
+        flex-direction: column;
+    }
+
+    .footerdata span {
+        font-size: 20px;
+        padding: 0px;
+    }
+}
